@@ -1,11 +1,25 @@
-header {}
+header {
+
+}
 
 body {
     font-family: "Roboto", sans-serif, Arial;
+    display: flex;
 }
 /*for introduksjon bilde og tekst paa forside*/
 .hero {
     display: flex;
+    align-items: center;
+}
+
+.hero text {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero img {
+    width: 50%;
+    height: 1rem;
 }
 
 footer {}
