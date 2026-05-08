@@ -1,0 +1,11 @@
+header {}
+
+body {
+    font-family: "Roboto", sans-serif, Arial;
+}
+/*for introduksjon bilde og tekst paa forside*/
+.hero {
+    display: flex;
+}
+
+footer {}
