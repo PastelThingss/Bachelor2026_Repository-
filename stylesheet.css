@@ -69,11 +69,11 @@ nav {
 .hero {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     border: 1px solid #000;
-    padding: 2rem;
-    gap: 2rem;
+    margin: 2rem;
+    min-height: 340px;
 }
 
 .hero-text {
@@ -85,31 +85,149 @@ nav {
 }
 
 .hero-images {
-    width: 50%;
-    height: auto;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
 }
 
-.hero-badges {}
+.hero-images > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-badges {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.hero-badges img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 .hero-buttons {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+/*dette er det som, gjoor den foorste knappen moork*/
+.hero-buttons button:first-child {
+    color: #fff;
+    background: #070707;
+}
+
+/*dette er knapp to som blir da outline*/
+.hero-buttons button:last-child {
+    color: #000;
+    background: #fff;
 }
 
 /*tjenester for forsiden sine tjenester bokser*/
 /*tjenestrer*/
-.tjenester {}
+.tjenester {
+    padding: 2rem;
+}
+
+.tjenester h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
 
 .tjenester-grid {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
+    gap: 1rem;
 }
 
 /*kort for selve cssen p[ selve kortenen der tjesnter*/
 /*kort*/
-.kort {}
+.kort {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
 
-.kort-images {}
+.kort img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.kort h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.kort p {
+    font-size: 1rem;
+    padding: 0.2rem;
+    flex: 1;
+}
+
+.kort button {
+    margin: 0.5rem;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.kort button:hover {
+    background: #070707;
+}
+
+/*oppdrag*/
+.oppdrag {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+}
+
+.oppdrag-text {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.oppdrag-img {
+        flex: 1;
+        overflow: hidden;
+}
+
+.oppdrag-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+}
 
 /*footer*/
 footer {}
