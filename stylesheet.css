@@ -137,6 +137,7 @@ nav {
     color: #000;
     background: #fff;
 }
+/*gotta make hero buttons hoverable right!?*/
 
 /*tjenester for forsiden sine tjenester bokser*/
 /*tjenestrer*/
@@ -199,7 +200,7 @@ nav {
 }
 
 .kort button:hover {
-    background: #070707;
+    background: #8d8d8d;
 }
 
 /*oppdrag*/
@@ -300,8 +301,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-
-.prosjekter-grid {}
 
 .prosjekter-info {
     padding: 1rem;
@@ -417,7 +416,7 @@ nav {
 }
 
 .prat-buttons button:hover {
-    background: #070707;
+    background: #8d8d8d;
 }
 
 /*footer*/
