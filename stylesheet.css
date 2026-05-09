@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
 /*body*/
 body {
     font-family: "Roboto", sans-serif, Arial;
@@ -17,10 +15,36 @@ body {
 /*header*/
 header {
     display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+/*logo css for bilde som blir brukt for logoen*/
+.logo img {
+    height: 50px; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
 }
 
 /*navigasjons bar*/
-nav {}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/*css for dropdown og dropdown menu*/
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: block;
+    padding: 0.5rem;
+}
+
+/*knapp css for ringe knappen btn=knapp*/
+.phone-btn {
+    color: #000000;
+    padding: 1rem;
+}
 
 /*for introduksjon bilde og tekst paa forside*/
 /*hero*/
@@ -38,7 +62,7 @@ nav {}
 
 .hero-images {
     width: 50%;
-    height: 1rem;
+    height: auto;
 }
 
 .hero-badges {}
@@ -54,6 +78,7 @@ nav {}
 
 .tjenester-grid {
     display:grid;
+    grid-template-columns:repeat(3, 1fr);
 }
 
 /*kort for selve cssen p[ selve kortenen der tjesnter*/

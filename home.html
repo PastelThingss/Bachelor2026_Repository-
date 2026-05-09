@@ -8,23 +8,40 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+    <!--header-->
     <header>
         <h1><img src="img/logo.png" alt="Byggmester Bjorn Larsen eftf."></h1>
         <nav>
                 <a href="#">Forside</a>
+
+                <!--en dropdown menu for tjenster klasse-->
+                <div class="dropdown">
                 <a href="#">Tjenester</a>
+                <ul clawss="dropdown-menu">
+                    <li><a href="#">Rehabilitering</a></li>
+                    <li><a href="#">Bad og våtrom</a></li>
+                    <li><a href="#">Takarbeid</a></li>
+                    <li><a href="#">Vinduer og dører</a></li>
+                    <li><a href="#">Tilbygg og påbygg</a></li>
+                    <li><a href="#">Nybygg</a></li>
+                </ul>
+                </div>
+
                 <a href="#">Prosjekter</a>
                 <a href="#">Om oss</a>
                 <a href="#">Kontakt</a>
+
+                <a class="phone-btn">900 44 124</a>
         </nav>
     </header>
 
+    <!--main-->
     <main>
         <!--Hero section/forside bilde og tekst introduksjon-->
         <section class="hero"> <!--Forside bilde med introduksjons tekst--><!--heter ogsaa en Hero-->
             <!--her kommer en div klasse for å få teksten til oppføre seg riktig-->
             <div class="hero-text">
-                <h1>BYGGMESTER I HALDEN OG FREDRIKSTAD</h1>
+                <h2>BYGGMESTER I HALDEN OG FREDRIKSTAD</h2>
                 <p>Vi hjelper privatkunder med rehabilitering, bad, tak, vinduer og tilbygg. Enten oppdraget er stort eller lite, sørger vi for høy kvalitet og en ryddig prosess fra start til slutt.</p>
             </div>
         <div class="hero-images">
@@ -95,12 +112,14 @@
             </div>
         </section>
 
+        <!--Små og større oppdrag blokk-->
         <section>
             <h2>små og større oppdrag blokk</h2>
             <p>tekst</p>
             <p>bilde her</p>
         </section>
 
+        <!--slik gaar du videre-->
         <section>
             <h2>Slik går det videre: steg for steg forklaring/visning</h2>
             <p>01
@@ -117,18 +136,21 @@
             </p>
         </section>
 
+        <!--Prosjketer innen rehabilitering-->
         <section>
             <h2>Prosjketer innen rehabilitering</h2>
             <p>bokser med bilder og tkest</p>
             <p>Se alle prosjkter pil knapp</p>
         </section>
 
+        <!--25 års erfaring-->
         <section>
             <p>25 års erfaring</p>
             <h3>Lokal erfaring siden 2001</h3>
             <p>Tekst</p>
         </section>
 
+        <!--klar for en prat?-->
         <section>
             <h2>Klar for prat?</h2>
             <p>tekst</p>
@@ -138,6 +160,7 @@
 
     </main>
 
+    <!--footer-->
     <footer>
         <p>Quote: Dit hjem - vårt fag</p>
         <section>
