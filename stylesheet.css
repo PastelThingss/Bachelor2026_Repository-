@@ -227,6 +227,53 @@ nav {
         height: 100%;
         object-fit: cover;
         display: block;
+        min-height: 300px;
+}
+
+/*steg*/
+.steg {
+    padding: 2rem;
+    background: #f0f0f0;
+}
+
+.steg h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.steg-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.steg-kort {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.steg-nummer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.steg-kort h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.steg-kort p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
 }
 
 /*footer*/
