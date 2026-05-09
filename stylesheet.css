@@ -233,7 +233,7 @@ nav {
 /*steg*/
 .steg {
     padding: 2rem;
-    background: #f0f0f0;
+    background: #fff;
 }
 
 .steg h2 {
@@ -254,7 +254,7 @@ nav {
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
-    border: 1px solid #000;
+    border: none;
     background: #fff;
 }
 
@@ -271,6 +271,77 @@ nav {
 }
 
 .steg-kort p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/*prosjekter*/
+.prosjekter {}
+
+.prosjekter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.prosjekter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/*erfaring*/
+.erfaring {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 2rem;
+    border: 1px solid #000;
+    min-height: 200px;
+}
+
+.erfaring-tall {
+    background: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+
+.erfaring-tall span {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.erfaring-tall p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+}
+
+.erfaring-tekst {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.erfaring-tekst h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.erfaring-tekst p {
     font-size: 1rem;
     color: #333;
     line-height: 1.5;
