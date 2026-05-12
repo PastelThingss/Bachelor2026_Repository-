@@ -338,8 +338,8 @@ nav a {
 
 /*dette er for diven til selve boksen/bilde*/
 .carousel-imgs {
-    width: 100%;
-    height: 200px;
+    width: 600px;
+    height: 650px;
     overflow: hidden;
 }
 
