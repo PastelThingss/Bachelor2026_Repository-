@@ -500,3 +500,21 @@ footer {
     text-decoration: none;
 }
 
+/*Media queries*/
+/*Her blir de 5 mest vanlige ksjermstøesle 
+satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe å ha million viass av meida quieries for å nå alle. de er ikek realsitk.*/
+/* extraliten skjerm*/
+@media only screen and (max-width: 450px) {} /*inni curly bracketsa så kan du legge exyta css regler for de små/extra små skjrmene*/
+
+/*liten skjerm*/
+@media only screen and (max-width: 600px) {}
+
+/*medium skjerm*/
+@media only screen and (max-width: 768px) {}
+
+/*stor ksjedrm*/
+@media only screen and (max-width: 992px) {}
+
+/*extra stor skjerm*/
+@media only screen and (max-width: 1200px) {} /*inni curly bracketsa så kan du legge exyta css regler for de store/extra skjrmene*/
+
