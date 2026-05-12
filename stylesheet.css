@@ -213,6 +213,8 @@ nav a {
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        border: 1px solid #000;
+        margin: 2rem;
 }
 
 .oppdrag-text {
@@ -328,6 +330,84 @@ nav a {
     margin-top: 0.5rem;
 }
 
+/*carousel*/ /*carouselen her blir også kvalifisasert til en image card fordi den går under kortet. i denne koden*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-imgs {
+    width: 100%;
+    height: 2rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.carousel-imgs.hidden {
+    display: none;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0rem 0.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.carousel-controls button:hover {
+    color: #fff;
+}
+
+/*prosjekt-info som er under bilde*/ /*endret navn til prosjekt på disse i stedet for prosjekter for å skille litt i mellom de for min egen del og for å gjøre det lettere å se hvem som tilhørte hvem av de og forsatt se de tilhørte hverandre.*/
+.prosjekt-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.prosjekt-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.prosjekt-kategori {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #000;
+}
+
+.prosjekt-beskrivelse {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.prosjekt-behov {
+    border-top: 1px solid #000;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
 /*erfaring*/
 .erfaring {
     display: flex;
@@ -417,6 +497,7 @@ nav a {
 
 .prat-buttons button {
     padding: 1rem 2rem;
+    background: #fff;
     color: #000;
     border: 1px solid #000;
     font-size: 1rem;
@@ -464,7 +545,7 @@ footer {
     gap: 0.5rem;
 }
 
-.footer-col h3 {
+.footer-col h4 {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;

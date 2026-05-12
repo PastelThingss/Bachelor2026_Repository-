@@ -166,31 +166,71 @@
             </div>
         </section>
 
+        <!--Her kommer image caruoselen og teksten tilk den og første kobling med js-->
+        <!--kode er i endring nå, og kan foregå store endringer-->
+
         <!--utvalgte Prosjketer innen rehabilitering-->
         <section class="prosjekter">
             <div class="prosjekter-header">
                     <h2>Utvalgte Prosjketer innen rehabilitering</h2>
                     <a href="#">Se alle prosjekter -></a>
             </div>
+
             <div class="prosjekter-grid">
 
-            <div class="prosjekter-kort">
-                <img src="img/placeholder_img2.jpg" alt="beskrivelse av bildet">
-                <div class="prosjekter-info">
-                    <h3>Rehabilitering av enebolig</h3>
-                    <p>Tekst</p>
-                    <!--De er bare to kort som er her-->
-                </div>
-            </div>
-            
+                <!--Prosjekt kort1-->
+                <div class="prosjekter-kort">
+                    <!--div klasse for å starte hele carousel boksen + carousel-imgs som er fro bildene inni image card carouselen-->
+                    <div class="carousel">
+                        <div class="carousel-imgs">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 1">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 2">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 3">
+                        </div>
 
-            <div class="prosjekter-kort">
-                <img src="img/placeholder_img2.jpg" alt="beskrivelse av bildet">
-                <div class="prosjekter-info">
-                    <h3>Bad og våtrom rehabilitering</h3>
-                    <p>Tekst</p>
+                        <!--styre kontrollene for å se antall bilder og for å clicke frem o gtilabke-->
+                        <div class="carousel-controls">
+                            <button class="prev-btn" onclick="changeSlide(this, -1)">,</button>
+                            <span class="carousel-counter">1/3</span>
+                            <button class="next-btn" onclick="changeSlide(this, 1)">,</button>
+                        </div>
+                    </div>
+
+                    <!--div klasse over teksten i utvalgte prosjketer bilde og tekst boksene-->
+                    <div class="prosjekt-info">
+                        <p class="prosjekt-kategori">BAD/VÅTROM</p>
+                        <h3>TOTALRENOVERING AV BAD</h3> <!--kan hende dette er en h4 vis h3 er frostort-->
+                        <p class="prosjekt-beskrivelse">Komplett fornyelse av bad med moderne løsninger og flisvalg</p>
+                        <p class="prosjekt-behov"><strong>BEHOV:</strong> Gammelt bad med behov for full oppgradering.</p>
+                    </div>
                 </div>
-            </div>
+                
+                <!--Prosjekt kort2-->
+                <div class="prosjekter-kort">
+                    <!--div klasse for å starte hele carousel boksen + carousel-imgs som er fro bildene inni image card carouselen-->
+                    <div class="carousel">
+                        <div class="carousel-imgs">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 1">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 2">
+                            <img src="img/placeholder_img2.jpg" alt="prosjekt bilde 3">
+                        </div>
+
+                        <!--styre kontrollene for å se antall bilder og for å clicke frem o gtilabke-->
+                        <div class="carousel-controls">
+                            <button class="prev-btn" onclick="changeSlide(this, -1)">,</button>
+                            <span class="carousel-counter">1/3</span>
+                            <button class="next-btn" onclick="changeSlide(this, 1)">,</button>
+                        </div>
+                    </div>
+
+                    <!--div klasse over teksten i utvalgte prosjketer bilde og tekst boksene-->
+                    <div class="prosjekt-info">
+                        <p class="prosjekt-kategori">REHABILITERING</p>
+                        <h3>REHABILITERING AV ENEBOLIG</h3> <!--kan hende dette er en h4 vis h3 er frostort-->
+                        <p class="prosjekt-beskrivelse">Innvendige og utvendige oppgraderinger</p>
+                        <p class="prosjekt-behov"><strong>BEHOV:</strong> Fornye boligen og oppgradere eldre bygningsdeler.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
