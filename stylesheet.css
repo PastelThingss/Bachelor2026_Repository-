@@ -336,14 +336,24 @@ nav a {
     overflow: hidden;
 }
 
+/*dette er for diven til selve boksen/bilde*/
 .carousel-imgs {
     width: 100%;
     height: 200px;
+    overflow: hidden;
+}
+
+/*dette er for selve bilde inni diven*/
+.carousel-imgs img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.carousel-imgs.hidden {
+
+/*skjuler bilder*/
+.carousel-imgs img.hidden {
     display: none;
 }
 
