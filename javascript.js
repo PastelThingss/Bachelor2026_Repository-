@@ -2,7 +2,7 @@ function changeSlide(btn, direction) {
     //finn den bilde carouselen denne knappen er med/tilhører til
     const carousel = btn.closest('.carousel');
     //bilder som er i kortet og tellern hvor mange bilder er det
-    const imgs = carousel.querySelectorAll(`.carousel-images img`);
+    const imgs = carousel.querySelectorAll(`.carousel-imgs img`);
     const counter = carousel.querySelector('.carousel-counter');
 
     //finn hvilket bilde som vises nå altså aktivt vises på skjeremn
@@ -17,6 +17,6 @@ function changeSlide(btn, direction) {
     imgs[next].classList.remove(`hidden`);
 
     //oppdater teller tallet
-    counter.textContent = (next + 1) + ` /` + imgs.length;
+    counter.textContent = (next + 1) + ` / ` + imgs.length;
 
 }
