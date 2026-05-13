@@ -306,6 +306,7 @@ nav a {
 .prosjekter-header a {
     text-decoration: none;
     color: #000;
+    font-weight: 600;
 }
 
 .prosjekter-grid {
@@ -338,7 +339,7 @@ nav a {
 
 /*dette er for diven til selve boksen/bilde*/
 .carousel-imgs {
-    width: 100%;
+    width: 600px;
     height: 650px;
     overflow: hidden;
 }
