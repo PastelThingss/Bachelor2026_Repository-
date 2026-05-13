@@ -14,23 +14,23 @@
     <!--ADD ARROW ICONS ON ALL BUTTONS THAT NEED IT LIKE WITHIN VAARE TJENESTER-->
     <!--header-->
     <header>
-        <div class="logo"> <!--logo div er for aa kunne style logen-->
-        <p><strong>Byggmester</strong></p> <!--logo bilde, skal endres til tekst-->
-        <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+        <div class="logo">
+            <p><strong>Byggmester</strong></p>
+            <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
         </div>
 
-        <!---hamburger kanpp for mobil-->
-    <button class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <!-- hamburger: bare tre streker, ingen lenker inni -->
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <nav>
-                <a href="#">FORSIDE</a>
+        <!-- id="main-nav" er riktig syntaks, ikke #main-nav -->
+        <nav id="main-nav">
+            <a href="#">FORSIDE</a>
 
-                <!--en dropdown menu for tjenster klasse-->
-                <div class="dropdown">
+            <div class="dropdown">
                 <a href="#">TJENESTER</a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Rehabilitering</a></li>
@@ -40,13 +40,13 @@
                     <li><a href="#">Tilbygg og påbygg</a></li>
                     <li><a href="#">Nybygg</a></li>
                 </ul>
-                </div>
+            </div>
 
-                <a href="#">PROSJEKTER</a>
-                <a href="#">OM OSS</a>
-                <a href="#">KONTAKT</a>
+            <a href="#">PROSJEKTER</a>
+            <a href="#">OM OSS</a>
+            <a href="#">KONTAKT</a>
 
-                <a class="phone-btn" href="tel:90044124">900 44 124</a> <!--husk tlf knapp her!!-->
+            <a class="phone-btn" href="tel:90044124">900 44 124</a>
         </nav>
     </header>
 
