@@ -15,7 +15,8 @@
     <!--header-->
     <header>
         <div class="logo"> <!--logo div er for aa kunne style logen-->
-        <img src="img/logo.png" alt="Byggmester Bjorn Larsen eftf.">
+        <p><strong>Byggmester</strong></p> <!--logo bilde, skal endres til tekst-->
+        <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
         </div>
         <nav>
                 <a href="#">FORSIDE</a>
@@ -65,7 +66,7 @@
 
         <!--Våre tjenster section på forside-->
         <section class="tjenester">
-            <h2>VÅRE TJENESTER</h2>
+            <h2><strong>VÅRE TJENESTER</strong></h2>
             <!--<p>her kommer vårtjenster blokker med bilde litt tekst og en knapp som leder deg videre</p>-->
             <!--Husk knapper-->
             <div class="tjenester-grid">
@@ -143,17 +144,19 @@
 
             <div class="steg-kort">
             <span class="steg-nummer">01</span>
-            <p>DU TAR KONTAKT</p>
+            <h4>DU TAR KONTAKT</h4>
             <p>Ring oss eller send en forespørsel. Fortell kort hva du trenger hjelp med og hvor oppdraget gjelder.</p>
             </div>
 
             <div class="steg-kort">
             <span class="steg-nummer">02</span>
+            <h4>VI AVKLARER BEHOVET</h4>
             <p>Ved behov kommer vi på befaring for å avklare jobb, omfang og mulige løsninger.</p>
             </div>
             
             <div class="steg-kort">
             <span class="steg-nummer">03</span>
+            <h4>VIDERE VURDERING</h4>
             <p>Når vi har nok oversikt, får du en
             tydeligere avklaring av omfang,
             løsning og neste steg</p>
@@ -161,6 +164,7 @@
 
             <div class="steg-kort">
             <span class="steg-nummer">04</span>
+            <h4>GJENNOMFØRING OG OPPFØLGING</h4>
             <p>Når arbeidet starter, legger vi vekt på ryddig kommunikasjon, solid utførelse og god oppfølging.</p>
             </div>
 
@@ -193,8 +197,9 @@
                         <!--styre kontrollene for å se antall bilder og for å clicke frem o gtilabke-->
                         <div class="carousel-controls">
                             <button class="prev-btn" onclick="changeSlide(this, -1)">,</button>
-                            <span class="carousel-counter">1/3</span>
+                            
                             <button class="next-btn" onclick="changeSlide(this, 1)">,</button>
+                            <span class="carousel-counter">1/3</span>
                         </div>
                     </div>
 
