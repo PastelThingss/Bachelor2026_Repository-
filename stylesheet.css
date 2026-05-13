@@ -422,6 +422,12 @@ nav a {
     color: #000;
     background: #fff;
     padding: 0.5rem 1rem;
+    
+}
+
+.carousel-counter span {
+    justify-content: right;
+    align-items: right;
 }
 
 /*dette er for diven til selve boksen/bilde*/
@@ -444,34 +450,6 @@ nav a {
 /*skjuler bilder*/
 .carousel-imgs img.hidden {
     display: none;
-}
-
-.carousel-controls {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    gap: 0.2rem;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-.carousel-controls button {
-    background: none;
-    border: none;
-    font-size: 0.9rem;
-    padding: 0rem 0.2rem;
-    font-weight: 600;
-    line-height: 1;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.carousel-controls button:hover {
-    color: #fff;
 }
 
 /*prosjekt-info som er under bilde*/ /*endret navn til prosjekt på disse i stedet for prosjekter for å skille litt i mellom de for min egen del og for å gjøre det lettere å se hvem som tilhørte hvem av de og forsatt se de tilhørte hverandre.*/
