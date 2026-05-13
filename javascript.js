@@ -20,3 +20,8 @@ function changeSlide(btn, direction) {
     counter.textContent = (next + 1) + ` / ` + imgs.length;
 
 }
+
+function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('open');
+}
