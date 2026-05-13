@@ -69,6 +69,10 @@ nav a {
     text-decoration: none;
 }
 
+.phone-btn:hover {
+    background-color: #8d8d8d;
+}
+
 /*for introduksjon bilde og tekst paa forside*/
 /*hero*/
 .hero {
@@ -141,6 +145,10 @@ nav a {
 .hero-buttons button:last-child {
     color: #000;
     background: #fff;
+}
+
+.hero-buttons button:hover {
+    background: #8d8d8d;
 }
 /*gotta make hero buttons hoverable right!?*/
 
@@ -610,6 +618,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     .nav a {
         font-size: 1rem;
         flex-direction: column;
+
     }
 
     .nav .dropdown-menu {
@@ -641,6 +650,10 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         font-size: 0.9rem;
     }
 
+    .phone-btn:hover {
+        background-color: #8d8d8d;
+    }
+
     .tjenester-grid {
         grid-template-columns: 1fr;
     }
@@ -668,6 +681,20 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 
     .carousel-imgs img {
         height: auto;
+    }
+
+    .carousel-controls {
+        position: static;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    .carousel-controls button {
+        font-size: 0.8rem;
+    }
+
+    .carousel-controls button:hover {
+        color: #fff;
     }
 
     .footer-top {
