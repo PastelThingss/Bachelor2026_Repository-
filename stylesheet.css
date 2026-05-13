@@ -596,7 +596,94 @@ footer {
 /*Her blir de 5 mest vanlige ksjermstøesle 
 satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe å ha million viass av meida quieries for å nå alle. de er ikek realsitk.*/
 /* extraliten skjerm*/
-@media only screen and (max-width: 450px) {} /*inni curly bracketsa så kan du legge exyta css regler for de små/extra små skjrmene*/
+@media only screen and (max-width: 450px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .nav .dropdown-menu {
+        position: static;
+        border: none;
+        padding: 0;
+    }
+
+    .nav .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        border: none;
+        padding: 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .phone-btn {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .tjenester-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steg-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .prosjekter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-images {
+        order: -1;
+    }
+
+    .carousel-imgs {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-imgs img {
+        height: auto;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        text-align: center;
+    }
+} /*inni curly bracketsa så kan du legge exyta css regler for de små/extra små skjrmene*/
 
 /*liten skjerm*/
 @media only screen and (max-width: 600px) {}
