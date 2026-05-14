@@ -391,18 +391,8 @@ nav a {
     line-height: 1.5;
 }
 
-/*prosjekter*/
-.prosjekter {
-    padding: 2rem;
-}
-
-/*.prosjekter-kort img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}*/
-
+/*utvalgte prosjekter*/
+/*utvalgte prosjekter header klasse*/
 .prosjekter-header {
     display: flex;
     justify-content: space-between;
@@ -416,86 +406,33 @@ nav a {
     font-weight: 600;
 }
 
-.prosjekter-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    border: 1px solid #000;
+/*utvalgte prosjekter bokser klasse*/
+.prosjekter-bokser {
+    display: flex;
+    gap: 1;
+    justify-content: space-between;
 }
 
-.prosjekter-info {
-    padding: 1rem;
+.prosjekter-bokser section {
+    flex-basis: 40%;/*eller 45%*/
+    border: #000 solid 1px;
 }
 
-.prosjekter-info h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.prosjekter-info p {
-    font-size: 1rem;
-    color: #333;
-    margin-top: 0.5rem;
-}
-
-/*carousel*/ /*carouselen her blir også kvalifisasert til en image card fordi den går under kortet. i denne koden*/
-.carousel {
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-counter {
-    border: 1px solid #000;
-    color: #000;
-    background: #fff;
-    padding: 0.5rem 1rem;
-    
-}
-
-.carousel-counter span {
-    justify-content: right;
-    align-items: right;
-}
-
-/*dette er for diven til selve boksen/bilde*/
-.carousel-imgs {
+.prosjekter-bokser img {
+    height: auto;
     width: 100%;
-    height: 650px;
-    overflow: hidden;
-    border: 1px solid #000;
+    border-bottom: #000 solid 1px;
 }
 
-/*dette er for selve bilde inni diven*/
-.carousel-imgs img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-/*skjuler bilder*/
-.carousel-imgs img.hidden {
-    display: none;
-}
-
-/*prosjekt-info som er under bilde*/ /*endret navn til prosjekt på disse i stedet for prosjekter for å skille litt i mellom de for min egen del og for å gjøre det lettere å se hvem som tilhørte hvem av de og forsatt se de tilhørte hverandre.*/
-.prosjekt-info {
+.prosjekter-bokser span {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    border:#000 solid 1px;
 }
 
-.prosjekt-info h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.prosjekt-kategori {
+/*klasse fro kateogri p tekst i utvalgte prosjekter. den som er grå*/
+.prosjekter-kate {
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -503,17 +440,14 @@ nav a {
     color: rgba(209, 213, 219, 1);
 }
 
-.prosjekt-beskrivelse {
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
+.prosjekter-bokser div p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
 }
 
-.prosjekt-behov {
+#behov {
     border-top: 1px solid #000;
     padding-top: 0.5rem;
-    font-size: 1rem;
-    color: #333;
 }
 
 /*erfaring*/
@@ -655,9 +589,23 @@ footer {
     padding: 2rem 1rem;
 }
 
-.footer-logo img {
+.footer-logo {
     height: 50px;
     margin-bottom: 1rem;
+}
+
+.footer-logo {
+    height: 50px; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
+    font-family: "time-new-roman", serif;
+    font-style: time-new-roman;
+}
+
+.footer-logo p {
+    font-style: time-new-roman;
+}
+
+#bjørn {
+    font-size: 1.5rem;
 }
 
 .footer-quote {
@@ -716,158 +664,21 @@ footer {
 /*Media queries*/
 /*Her blir de 5 mest vanlige ksjermstøesle 
 satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe å ha million viass av meida quieries for å nå alle. de er ikek realsitk.*/
-/* extraliten skjerm*/
-/*@media only screen and (max-width: 450px) {
-.body {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .header {
-        flex-direction: column;
-    }
-
-    hamburger meny for mobil
-        .hamburger {
-        display: flex;  show the button on mobile 
-    }
-
-    #main-nav {
-        display: none;  hide nav by default on mobile 
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
-        position: absolute;
-        top: 80px;  just below the header 
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-bottom: 1px solid #000;
-        z-index: 100;
-    }
-
-    #main-nav.open {
-        display: flex;  show nav when open class is added 
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 50px;
-    }
-
-    .nav a {
-        font-size: 1rem;
-        flex-direction: column;
-
-    }
-
-    .nav .dropdown-menu {
-        position: static;
-        border: none;
-        padding: 0;
-    }
-
-    .nav .dropdown:hover .dropdown-menu {
-        display: none;
-    }
-
-    .dropdown {
-        width: 100%;
-    }
-
-    .dropdown-menu {
-        position: static;
-        border: none;
-        padding: 0;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    .phone-btn {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .phone-btn:hover {
-        background-color: #8d8d8d;
-    }
-
-    .tjenester {
-        padding: 21px;
-    }
-
-    .tjenester-grid {
-        grid-template-columns: 1fr;
-    }
+/* --- EXTRA LITEN: 450px og under --- */
+@media only screen and (max-width: 450px) {
 
     .steg-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 kolonne på veldig liten skjerm */
     }
 
-    .prosjekter-grid {
-        grid-template-columns: 1fr;
+    .hero-text h1 {
+        font-size: 1.3rem;
     }
 
-    .hero {
-        flex-direction: column;
-        padding: 30px;
+    .tjenester h2 {
+        font-size: 1.3rem;
     }
-
-    .hero-images {
-        order: -1;
-    }
-
-    .carousel-imgs {
-        width: 100%;
-        height: auto;
-    }
-
-    .carousel-imgs img {
-        height: auto;
-    }
-
-    .carousel-controls {
-        position: static;
-        margin-top: 0.5rem;
-        justify-content: center;
-    }
-
-    .carousel-controls button {
-        font-size: 0.8rem;
-        padding: 12px;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .carousel-controls button:hover {
-        color: #fff;
-    }
-
-    .footer-top {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .footer-bottom p,
-    .footer-bottom a {
-        text-align: center;
-    }
-
-    .section {
-        padding: 84px;
-    
-    }
-} inni curly bracketsa så kan du legge exyta css regler for de små/extra små skjrmene*/
-
+}
 /*liten skjerm*/
 @media only screen and (max-width: 600px) {}
 
@@ -974,16 +785,22 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     /* steg: 2 kolonner på mobil (passer bedre enn 1) */
     .steg-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 
     /* prosjekter: 1 kolonne */
-    .prosjekter-grid {
-        grid-template-columns: 1fr;
+    .prosjekter-bokser {
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .carousel-imgs {
+    .prosjekter-bokser-imgs {
         height: 280px;
+    }
+
+    .prosjekter-bokser span {
+        justify-content: space-between;
     }
 
     /* erfaring */
@@ -1026,25 +843,8 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 }
 
-/* --- EXTRA LITEN: 450px og under --- */
-@media only screen and (max-width: 450px) {
-
-    .steg-grid {
-        grid-template-columns: 1fr; /* 1 kolonne på veldig liten skjerm */
-    }
-
-    .hero-text h1 {
-        font-size: 1.3rem;
-    }
-
-    .tjenester h2 {
-        font-size: 1.3rem;
-    }
-}
-
 /*stor ksjedrm*/
 @media only screen and (max-width: 992px) {}
 
 /*extra stor skjerm*/
 @media only screen and (max-width: 1200px) {} /*inni curly bracketsa så kan du legge exyta css regler for de store/extra skjrmene*/
-
