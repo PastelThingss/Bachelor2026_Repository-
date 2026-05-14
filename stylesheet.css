@@ -8,10 +8,16 @@
 /*body*/
 body {
     font-family: "Roboto", sans-serif, Arial;
-    color: #000;
-    background: #fff;
+    /*color: #000;
+    background: #fff;*/
     margin-left: 85px;
     margin-right: 85px;
+}
+
+/*icons*/
+.fa-solid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 /*header*/
@@ -109,6 +115,7 @@ nav a {
 .phone-btn:hover {
     background-color: #fff;
     color: #000;
+    border: 1px solid #000;
 }
 
 /*for introduksjon bilde og tekst paa forside*/
@@ -174,10 +181,11 @@ nav a {
     margin-top: 50px;
 }
 
+/*detter hva som gjør kanppene på hero like til hverandre*/
 .hero-buttons button {
     padding: 10px 20px;
-    background: #000;
-    color: #fff;
+    /*background: #000;
+    color: #fff;*/
     border: 1px solid #000;
     cursor: pointer;
     padding-left: 12px;
@@ -185,29 +193,34 @@ nav a {
 }
 
 /*dette er det som, gjoor den foorste knappen moork*/
-.hero-buttons button:first-child {
+/*våre tjenster knapp gjør den mørk*/
+.hero-buttons-sort {
+    background: #000;
     color: #fff;
-    background: #070707;
 }
 
 /*dette er knapp to som blir da outline*/
-.hero-buttons button:last-child {
+/*ta kontakt knapp gjør den hvit med mørk outline*/
+.hero-buttons-hvit {
     color: #000;
     background: #fff;
     border: 1px solid #000;
 }
 
-.hero-buttons button:first-child:hover {
+/*dette er det som, gjoor den foorste knappen moork*/
+/*våre tjenster og dette er hva som gjør den hvit med mørk outlin ei hover og gir den svart tekst*/
+.hero-buttons-sort:hover {
     background: #fff;
     color: #000;
 }
 
-.hero-buttons button:last-child:hover {
-    background: #000;
+/*dette er knapp to som blir da outline*/
+/*ta kontakt og dette er hva som gjør den mørk med hvit tekst*/
+.hero-buttons-hvit:hover {
     color: #fff;
-    border: 1px solid #fff;
+    background: #000;
+    border: 1px solid #000;
 }
-/*gotta make hero buttons hoverable right!?*/
 
 /*tjenester for forsiden sine tjenester bokser*/
 /*tjenestrer*/
@@ -614,12 +627,13 @@ nav a {
     border: 1px solid #fff;
 }
 
-.hero-buttons button:first-child:hover {
+.prat-buttons button:first-child:hover {
     background: #000;
     color: #fff;
+    border: 1px solid #fff;
 }
 
-.hero-buttons button:last-child:hover {
+.prat-buttons button:last-child:hover {
     background: #fff;
     color: #000;
 }

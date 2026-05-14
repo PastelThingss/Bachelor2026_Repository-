@@ -1,0 +1,39 @@
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.hero-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/*dette er det som, gjoor den foorste knappen moork*/
+.hero-sort-btn {
+    color: #fff;
+    background: #000;
+}
+
+/*dette er knapp to som blir da outline*/
+.hero-hvit-btn {
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+}
+
+/*dette er det som, gjoor den foorste knappen moork*/
+.hero-sort-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*dette er knapp to som blir da outline*/
+.hero-hvit-btn:hover  {
+    color: #fff;
+    background: #000;
+    border: 1px solid red;
+}
