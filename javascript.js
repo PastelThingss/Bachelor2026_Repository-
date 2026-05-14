@@ -25,3 +25,21 @@ function toggleMenu() {
     const nav = document.getElementById('main-nav');
     nav.classList.toggle('open');
 }
+
+//JS FOR SEND EN FORESPØRSEL SKJEMA PÅ SIDEN KONTAKT OSS
+const form = document.querySelector("form");
+const para = document.querySelector("p");
+const name = document.getElementById("navn");
+const name = document.getElementById("tlf");
+const name = document.getElementById("e-post");
+const name = document.getElementById("ønsker");
+const name = document.getElementById("hvor-er");
+const name = document.getElementById("mld");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    if (navigation.value === '' || tlf.value === '' || epost-value === '') {
+        alert("Fyll inn navn, telefon og e-post.");
+    }
+});

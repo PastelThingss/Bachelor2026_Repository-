@@ -695,14 +695,14 @@ input [type="email"] {
     margin-bottom: 2rem;
 }
 
-select {
+input [type="text"], select, option {
     border: 1px solid #000;
     padding: 1rem;
     margin: 1rem;
     margin-bottom: 2rem;
 }
 
-input [type="text"], select, option {
+input [type="hvor-er"] {
     border: 1px solid #000;
     padding: 1rem;
     margin: 1rem;
@@ -715,6 +715,15 @@ input [type="text"], select, textarea {
     margin: 1rem;
     margin-bottom: 2rem;
 }
+
+input [type="submit"] {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*HUSK Å ADDE CSS FOR P TAGEN MED TEKST INFO PÅ BUNN AV KSJEAMET OG TENKT BARE GJØR TEKSTEN GRÅ*/
 
 
 /*Media queries*/
