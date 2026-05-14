@@ -197,10 +197,12 @@ nav a {
 
 .hero-buttons button:first-child:hover {
     background: #fff;
+    color: #000;
 }
 
 .hero-buttons button:last-child:hover {
     background: #000;
+    color: #fff;
 }
 /*gotta make hero buttons hoverable right!?*/
 
@@ -269,6 +271,7 @@ nav a {
 
 .kort button:hover {
     background: #000;
+    color: #fff;
 }
 
 /*oppdrag*/
@@ -609,10 +612,12 @@ nav a {
 
 .hero-buttons button:first-child:hover {
     background: #fff;
+    color: #000;
 }
 
 .hero-buttons button:last-child:hover {
     background: #000;
+    color: #fff;
 }
 
     .section {
