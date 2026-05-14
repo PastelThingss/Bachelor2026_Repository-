@@ -30,7 +30,7 @@ header {
     position: sticky;
     top: 0;
     background: #fff;
-    /*z-index: 100;*/
+    z-index: 100;
 }
 
 /* hamburger mny holdes gjemt på dekstop pga css her*/
@@ -128,12 +128,12 @@ nav a {
     border: 1px solid #000;
     margin: 2rem;
     min-height: 340px;
-    padding: 43px;
+    padding: 1;
 }
 
 .hero-text {
     flex: 1;
-    padding: 40px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,16 +141,19 @@ nav a {
 
 .hero-text h1 {
     margin-bottom: 20px;
+    font-size: 3.6rem;
+    font-weight: 600;
 }
 
 .hero-text p {
-    font-size: 24px;
+    font-size: 1.1rem;
 }
 
 .hero-images {
     flex: 1;
     overflow: hidden;
     position: relative;
+    border-left: 1px solid #000;
 }
 
 .hero-images > img {
@@ -409,8 +412,8 @@ nav a {
 /*utvalgte prosjekter bokser klasse*/
 .prosjekter-bokser {
     display: flex;
-    gap: 1;
-    justify-content: space-between;
+    gap: 5rem;
+    justify-content: center;
 }
 
 .prosjekter-bokser section {
@@ -801,7 +804,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 
     .prosjekter-bokser span {
-        justify-content: space-between;
+        justify-content: scenter;
     }
 
     /* erfaring */
@@ -848,4 +851,21 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 @media only screen and (max-width: 992px) {}
 
 /*extra stor skjerm*/
-@media only screen and (max-width: 1200px) {} /*inni curly bracketsa så kan du legge exyta css regler for de store/extra skjrmene*/
+@media only screen and (max-width: 1200px) {
+    .prosjekter-bokser {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.prosjekter-bokser section {
+    flex-basis: 45%;/*eller 45%*/
+    border: #000 solid 1px;
+}
+
+.prosjekter-bokser img {
+    height: auto;
+    width: 100%;
+    border-bottom: #000 solid 1px;
+}
+} /*inni curly bracketsa så kan du legge exyta css regler for de store/extra skjrmene*/
