@@ -107,7 +107,7 @@ nav a {
 }
 
 .phone-btn:hover {
-    background-color: #8d8d8d;
+    background-color: #fff;
 }
 
 /*for introduksjon bilde og tekst paa forside*/
@@ -195,8 +195,12 @@ nav a {
     background: #fff;
 }
 
-.hero-buttons button:hover {
-    background: #8d8d8d;
+.hero-buttons button:first-child:hover {
+    background: #fff;
+}
+
+.hero-buttons button:last-child:hover {
+    background: #000;
 }
 /*gotta make hero buttons hoverable right!?*/
 
@@ -264,7 +268,7 @@ nav a {
 }
 
 .kort button:hover {
-    background: #8d8d8d;
+    background: #000;
 }
 
 /*oppdrag*/
@@ -603,8 +607,12 @@ nav a {
     border: 1px solid #fff;
 }
 
-.prat-buttons button:hover {
-    background: #8d8d8d;
+.hero-buttons button:first-child:hover {
+    background: #fff;
+}
+
+.hero-buttons button:last-child:hover {
+    background: #000;
 }
 
     .section {
