@@ -664,6 +664,59 @@ footer {
     text-decoration: none;
 }
 
+/*KONTAKT OSS STYLEING*/
+
+/*SEND EN FORESPØRSEL SKJEMA STYLEING*/
+.form {
+    border: 1px solid #000;
+    padding: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+input [type="text"] {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+input [type="tel"] {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+input [type="email"] {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+select {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+input [type="text"], select, option {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+input [type="text"], select, textarea {
+    border: 1px solid #000;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+
 /*Media queries*/
 /*Her blir de 5 mest vanlige ksjermstøesle 
 satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe å ha million viass av meida quieries for å nå alle. de er ikek realsitk.*/
