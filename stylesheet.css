@@ -793,6 +793,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         flex-direction: column;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        gap: 1rem;
     }
 
     .prosjekter-bokser-imgs {
