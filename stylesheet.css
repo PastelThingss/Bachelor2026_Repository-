@@ -33,24 +33,6 @@ header {
     z-index: 100;
 }
 
-/* hamburger mny holdes gjemt på dekstop pga css her*/
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.hamburger span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background: #000;
-}
-
 /*logo css for bilde som blir brukt for logoen. endres til text*/
 .logo {
     line-height: 1.1; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
@@ -66,21 +48,6 @@ header {
 
 #bjørn {
     font-size: 1.35rem;
-}
-
-/*navigasjons bar*/
-nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    /*padding: 68px;*/
-}
-
-nav a {
-    color: #000;
-    text-decoration: none;
 }
 
 /*NAV LINKERS STYLE DE LINKER TIL ANDRE FORISER I HEADER*/
@@ -114,28 +81,16 @@ nav a {
     position: relative;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 0.5rem;
-    list-style: none;
-    min-width: 150px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 /*TOGGLE CSS*/
 .dropdown-toggle {
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
+}
+
+.dropdown-toggle.nav-link {
+    padding: 0.5rem 0;
 }
 
 .dropdown-toggle i {
@@ -205,6 +160,24 @@ nav a {
     background: #fff;
     color: #000;
     border: 1px solid #000;
+}
+
+/* hamburger mny holdes gjemt på dekstop pga css her*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #000;
 }
 
 /*for introduksjon bilde og tekst paa forside*/
@@ -1059,7 +1032,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         border: none;
         box-shadow: none;
         margin-left: 1.5rem;
-        padding: 0rem;
+        padding: 0;
     }
 
     #main-nav.open .dropdown-menu {

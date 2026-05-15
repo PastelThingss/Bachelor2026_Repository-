@@ -23,7 +23,9 @@ function changeSlide(btn, direction) {
 
 function toggleMenu() {
     const nav = document.getElementById('main-nav');
-    nav.classList.toggle('open');
+    if (nav) {
+        nav.classList.toggle('open');
+    }
 }
 
 
