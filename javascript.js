@@ -60,3 +60,10 @@ window.addEventListener('load', function() {
         select.value = '';
     }
 });
+
+//AUTOMATISK MARKERER DEN AKITVESIDEN/DEN DU ER PÅ OG GJØR LINK AKTIV
+document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.href === window.location.href) {
+        link.classList.add('active');
+    }
+});

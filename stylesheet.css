@@ -14,6 +14,16 @@ body {
     margin-right: 85px;
 }
 
+main {
+    padding-bottom: 2rem;
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 /*icons*/
 .fa-solid {
     padding-left: 0.5rem;
@@ -124,7 +134,7 @@ header {
 
 .dropdown-menu li a {
     display: block;
-    padding: 0.75rem 1.5;
+    padding: 0.75rem 1.5rem;
     color: #000;
     text-decoration: none;
     font-weight: 600;
@@ -133,7 +143,7 @@ header {
 }
 
 .dropdown-menu li a:hover {
-    display: block;
+    background: #000;
     color: #fff;
 }
 
@@ -285,6 +295,7 @@ header {
     color: #fff;
     background: #000;
     border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 /*tjenester for forsiden sine tjenester bokser*/
@@ -424,8 +435,8 @@ header {
 }
 
 .steg-grid {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
@@ -510,7 +521,7 @@ header {
     margin-top: 1rem;
 }
 
-#behov {
+.behov {
     border-top: 1px solid #000;
     padding-top: 0.5rem;
 }
@@ -826,7 +837,6 @@ footer {
 /*RAD MED TO FELTER SIDE BY SIDE*/
 .form-rad {
     display: grid;
-    flex-direction: column;
     gap: 0.4rem;
     grid-template-columns: 1fr 1fr;
 }
@@ -1019,6 +1029,10 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         display: flex;
     }
 
+    #main-nav a.nav-link:not(.dropdown-toggle):not(.phone-btn) {
+        padding: 0.75rem 1.5rem;
+    }
+
     .nav-link.dropdown-toggle {
         padding: 1rem 1.5rem;
         font-size: 1.1rem;
@@ -1056,11 +1070,15 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         font-size: 0.95rem;
     }
 
+    /*SKAL HINDRE DESKTOPS HOVER TIL Å AKTIVERE/SKRU SEG PÅ SIN DROPDOWN PÅ MOBIL/TOUCH*/
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
     /* hero: tekst over bilde på mobil */
     .hero {
         flex-direction: column;
         margin: 1rem;
-        padding: 1rem;
     }
 
     .hero-text {
@@ -1081,7 +1099,19 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 
     .hero-images > img {
-        height: 220px;
+        height: 260px;
+    }
+
+    .hero-badges {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        background: none;
+    }
+
+    .hero-badges img {
+        width: 55px;
+        height: 55px;
     }
 
     /* tjenester: 1 kolonne */
@@ -1122,7 +1152,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     /* steg: 2 kolonner på mobil (passer bedre enn 1) */
     .steg-grid {
         display: grid;
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: 1fr;
     }
 
     /* prosjekter: 1 kolonne */
@@ -1196,7 +1226,96 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 }
 
 /*stor ksjedrm*/
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .logo {
+        flex-shrink: 0;
+    }
+
+    /* vis hamburger knappen */
+    .hamburger {
+        display: flex;
+    }
+
+    /* skjul nav på tablet og mobil */
+    #main-nav {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid #000;
+        z-index: 100;
+        gap: 0;
+    }
+
+    #main-nav.open {
+        display: flex;
+    }
+
+    #main-nav a.nav-link:not(.dropdown-toggle):not(.phone-btn) {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .nav-link.dropdown-toggle {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        border: none;
+        box-shadow: none;
+        margin-left: 1.5rem;
+        padding: 0;
+    }
+
+    #main-nav.open .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown-toggle {
+        justify-content: space-between;
+    }
+
+    .phone-btn {
+        margin: 1rem 1.5rem;
+        justify-content: center;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .dropdown-menu li a {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-images > img {
+        height: 320px;
+    }
+
+    .hero-badges img {
+        width: 70px;
+        height: 70px;
+    }
+}
 
 /*extra stor skjerm*/
 @media only screen and (max-width: 1200px) {
