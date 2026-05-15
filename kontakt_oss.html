@@ -71,7 +71,7 @@
 
                 <!--VIL DU HELLER RINGE OSS BOKSEN-->
             <div class="ring-kort">
-                    <p><i class="fa-solid fa-phone">VIL DU HELLER RINGE OSS?</i></p>
+                    <p><i class="fa-solid fa-phone"></i>VIL DU HELLER RINGE OSS?</p>
                     <p>Du kan også nå oss på telefon for en prat om ditt prosjekt</p>
                     <a class="phone-btn" href="tel:90044124">RING 900 44 124</a>
                 </div>
@@ -86,13 +86,13 @@
                 <!--NAVN + TLF SIDE BY SIDE-->
                 <section class="form-rad">
                     <!--NAVN-->
-                    <div>
+                    <div class="form-gruppe">
                         <label for="navn">NAVN</label>
                         <input type="text" id="navn">
                     </div>
 
                     <!--TELEFON-->
-                    <div>
+                    <div class="form-gruppe">
                         <label for="tlf">TELEFON</label>
                         <input type="tel" id="tlf" pattern="[09]{3}-[0-9]{2}-[0-9]{3}" placeholder=".f.eks: 900 44 124">
                     </div>
@@ -110,12 +110,13 @@
                     <div class="form-gruppe">
                         <label for="ønsker">HVA ØNSKER DU HJELP MED?</label>
                         <select id="ønsker" name="ønsker">
-                            <option value="rehablitering"></option>
-                            <option value="bad/våtrom"></option>
-                            <option value="tak"></option>
-                            <option value="vinduer og dører"></option>
-                            <option value="tilbygg/påbygg"></option>
-                            <option value="nybygg"></option>
+                            <option value="" disabled selected>Velg tjeneste...</option>
+                            <option value="rehablitering">REHABILITERING</option>
+                            <option value="bad/våtrom">BAD OG VÅTROM</option>
+                            <option value="tak">TAKARBEID</option>
+                            <option value="vinduer og dører">VINDUER OG DØRER</option>
+                            <option value="tilbygg/påbygg">TILBYGG OG PÅBYGG</option>
+                            <option value="nybygg">NYBYGG</option>
                         </select>
                     </div>
 
@@ -141,14 +142,91 @@
         </div>
 
             <!--DETTE LURER MANGE PÅ-->
-        <div>
+        <div class="faq-container">
             <!--OVERSKIRFT OVER SPØRSMÅLENE-->
             <h2>DETTE LURER MANGE PÅ</h2>
 
-            <label></label>
-            <select>
-                <option></option>
-            </select>
+            <!--SPØRSMÅL 1-->
+            <!--SPØRSMÅLET FELTER-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    TAR DERE OGSÅ MINDRE OPPDRAG?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+                <!--SVAR PÅ SPØRSMÅL 1-->
+                <!--SVARET PÅ SPØRSMÅLET-->
+                <div class="faq-svar">
+                    <p>Ja, vi hjelper med både mindre og større oppdrag i privatmarkedet.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 2-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    KOMMER DERE PÅ BEFARING?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 2-->
+            <div class="faq-svar">
+                    <p>Ved behov avtaler vi befaring for å få bedre oversikt over arbeidet, omfanget og mulige løsninger.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 3-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    KAN JEG FÅ ET OVERSLAG ELLER TILBUD?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 3-->
+            <div class="faq-svar">
+                    <p>Når vi har nok oversikt over prosjektet, kan vi gi et bedre grunnlag for overslag eller tilb</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 4-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVOR JOBBER DERE?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 4-->
+            <div class="faq-svar">
+                    <p>Vi har hovedområde i Halden og tar også oppdrag i Fredrikstad-området.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 5-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVA SKJER ETTER AT JEG SENDER FORESPØRSELEN?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 5-->
+            <div class="faq-svar">
+                    <p>Vi ser på henvendelsen og tar kontakt for videre avklaring. Ved behov avtaler vi en befaring før løsning, omfang og neste steg vurderes nærmere.</p>
+                </div>
+            </div>
+
+            <!--SPØRSMÅL 6-->
+            <div class="faq-item">
+                <button class="faq-spørsmål" onclick="toggleFaq(this)">
+                    HVA BØR JEG HA KLART FØR JEG TAR KONTAKT?
+                    <span class="faq-pil">&#8964;</span>
+                </button>
+
+            <!--SVAR PÅ SPØRSMÅL 6-->
+            <div class="faq-svar">
+                    <p>Det holder å beskrive kort hva du ønsker hjelp med og hvor oppdraget gjelder. Vi hjelper deg videre med avklaringen.</p>
+                </div>
+            </div>
+
+
         </div>
     </main>
 

@@ -45,3 +45,18 @@ if (kontaktForm) {
 
     });
 }
+
+//FUNCTION FOR DE KLIKKABRE SPØRMSÅLENEN PÅ KONTAKT SIDEN
+function toggleFaq(btn) {
+    const svar = btn.nextElementSibling;
+    btn.classList.toggle('open');
+    svar.classList.toggle('open');
+}
+
+//RESETTER SELECT TIL PLACEHOLDER VELG TJESNTE.. PÅ KONTAKT OSS SIDEN NÅR DNE LASTES INN
+window.addEventListener('load', function() {
+    const select = document.getElementById('ønsker');
+    if (select) {
+        select.value = '';
+    }
+});
