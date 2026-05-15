@@ -25,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.25rem 0;
     border-bottom: 1px solid #000;
     position: sticky;
     top: 0;
@@ -46,24 +46,26 @@ header {
 
 .hamburger span {
     display: block;
-    width: 25px;
+    width: 28px;
     height: 3px;
     background: #000;
 }
 
 /*logo css for bilde som blir brukt for logoen. endres til text*/
 .logo {
-    height: 50px; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
+    line-height: 1.1; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
     font-family: "time-new-roman", serif;
     font-style: time-new-roman;
 }
 
 .logo p {
     font-style: time-new-roman;
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 #bjørn {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 /*navigasjons bar*/
@@ -79,6 +81,32 @@ nav {
 nav a {
     color: #000;
     text-decoration: none;
+}
+
+/*NAV LINKERS STYLE DE LINKER TIL ANDRE FORISER I HEADER*/
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+/*AKTIV SIDE UNDERLINJE FOR Å FÅ LINJE UNDER NAVNET PÅ SIDEN DU ER PÅ I HEADER*/
+.nav-link.active {
+    color: #000;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    background: #000;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
 }
 
 /*css for dropdown og dropdown menu*/
@@ -112,7 +140,11 @@ nav a {
 
 .dropdown-toggle i {
     font-size: 0.9rem;
-    transition: transform 0.2s;
+    transition: transform 0.25s ease;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
 }
 
 /*DESKTOP DROPDOWN MEMU*/
@@ -127,7 +159,7 @@ nav a {
     list-style: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     list-style: none;
-    min-width: 220px;
+    min-width: 240px;
     z-index: 200;
 }
 
@@ -137,17 +169,15 @@ nav a {
 
 .dropdown-menu li a {
     display: block;
-    padding: 0.75rem 1.25;
+    padding: 0.75rem 1.5;
     color: #000;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1rem;
     white-space: nowrap;
 }
 
-.dropdown-menu li a:hover,
-.dropdown-menu li .active {
+.dropdown-menu li a:hover {
     display: block;
     color: #fff;
 }
@@ -159,16 +189,20 @@ nav a {
 
 /*knapp css for ringe knappen btn=knapp*/
 .phone-btn {
-    background-color: #000;
-    color: #fafafa;
-    padding: 1rem;
+    background: #000;
+    color: #fff;
+    padding: 0.85rem 1.25rem;
+    border: none;
     text-decoration: none;
-    padding-left: 12px;
-    padding-right: 12px;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+    align-items: center;
 }
 
 .phone-btn:hover {
-    background-color: #fff;
+    background: #fff;
     color: #000;
     border: 1px solid #000;
 }
@@ -985,7 +1019,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 
     /* header må være relative så nav droppes riktig */
     header {
-        position: relative;
+        padding: 1rem 0;
     }
 
     /* vis hamburger knappen */
@@ -997,10 +1031,9 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     #main-nav {
         display: none;
         flex-direction: column;
-        gap: 1rem;
         padding: 1rem;
         position: absolute;
-        top: 70px;
+        top: 100%;
         left: 0;
         right: 0;
         background: #fff;
@@ -1013,14 +1046,20 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         display: flex;
     }
 
+    .nav-link.dropdown-toggle {
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
     /*MOBIL VRS FOR DROPDOWN TJENSTER MENUEN*/
     .dropdown-menu {
         position: static;
         display: none;
         border: none;
         box-shadow: none;
-        padding-left: 1.5rem;
-        padding-top: 0.5rem;
+        margin-left: 1.5rem;
+        padding: 0rem;
     }
 
     #main-nav.open .dropdown-menu {
@@ -1029,6 +1068,12 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 
     .dropdown-toggle {
         justify-content: space-between;
+    }
+
+    .phone-btn {
+        margin: 1rem 1.5rem;
+        justify-content: center;
+        font-size: 1.1rem;
         width: 100%;
     }
 

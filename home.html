@@ -20,19 +20,19 @@
             <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
         </div>
 
-        <!-- hamburger: bare tre streker, ingen lenker inni -->
-        <button class="hamburger" onclick="toggleMenu()">
+        <!--HAMBURGER MEMU-->
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Meny">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <!-- id="main-nav" er riktig syntaks, ikke #main-nav -->
+        <!--DESKTOP + MOBIL NAVBAR-->
         <nav id="main-nav">
-            <a href="#">FORSIDE</a>
+            <a href="#" class="nav-link active">FORSIDE</a>
 
             <div class="dropdown">
-                <a href="#" class="dropdown-toggle">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">REHABILITERING</a></li>
                     <li><a href="#">BAD OG VÅTROM</a></li>
@@ -43,9 +43,9 @@
                 </ul>
             </div>
 
-            <a href="#">PROSJEKTER</a>
-            <a href="#">OM OSS</a>
-            <a href="#">KONTAKT</a>
+            <a href="#" class="nav-link">PROSJEKTER</a>
+            <a href="#" class="nav-link"></a>>OM OSS</a>
+            <a href="#" class="nav-link"></a>>KONTAKT</a>
 
             <a class="phone-btn" href="tel:90044124"><i class="fa-solid fa-phone"></i>900 44 124</a>
         </nav>
