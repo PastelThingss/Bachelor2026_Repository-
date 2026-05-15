@@ -719,8 +719,12 @@ footer {
 }
 
 .ring-kort p:first-child {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
 }
 
 .ring-kort .phone-btn {
