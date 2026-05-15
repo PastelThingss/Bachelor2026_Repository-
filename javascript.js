@@ -28,8 +28,6 @@ function toggleMenu() {
     }
 }
 
-
-
 //KONTAKT SKJEMA
 const kontaktForm = document.getElementById('kontakt-form');
 if (kontaktForm) {
