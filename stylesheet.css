@@ -665,62 +665,158 @@ footer {
 }
 
 /*KONTAKT OSS STYLEING*/
+/*DENNE ER FRO SELVE STYLING/LAYOUT AV BOSKENE PÅ SIDEN*/
+.kontakt-layout {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: flex-start;
+}
 
-/*SEND EN FORESPØRSEL SKJEMA STYLEING*/
-.form {
+/*FOR KONTAKT INFO OG RING OSS BOKSENEN FOR Å FÅ DE TIL VENSTRE*/
+.venstre-bokser {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: left;
+    flex-shrink: 0;
+    min-width: 280px;
+    width: 280px;
+}
+
+/*KONTAKTINFOMARSJON*/
+.kontakt-kort {
     border: 1px solid #000;
-    padding: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.kontakt-kort h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.kontakt-kort p {
+    font-size: 0.95rem;
+}
+
+/*VIL DU HELLER RINGE OSS?*/
+.ring-kort {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.ring-kort p {
+    font-size: 0.95rem;
+}
+
+.ring-kort p:first-child {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.ring-kort .phone-btn {
+    border: #fff solid 1px;
+    text-align: center;
+    padding: 0.8rem;
+    background: #000;
+    color: #fff;
+    display: block;
+}
+
+.ring-kort .phone-btn:hover {
     background: #fff;
     color: #000;
 }
 
-input [type="text"] {
+/*SEND EN FORESPØRSEL SKJEMA STYLEING*/
+#kontakt-form {}
+
+.form {
+    flex: 1;
     border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #000;
 }
 
-input [type="tel"] {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+.form h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
-input [type="email"] {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+/*RAD MED TO FELTER SIDE BY SIDE*/
+.form-rad {
+    display: grid;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-template-columns: 1fr 1fr;
 }
 
-input [type="text"], select, option {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+/*GRUPPE1: LABEL + INPUT*/
+.form-gruppe {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
-input [type="hvor-er"] {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+.form-gruppe label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-input [type="text"], select, textarea {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+.form-gruppe input,
+.form-gruppe select,
+.form-gruppe textarea {
+    border: #000 solid 1px;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    width: 100%;
 }
 
-input [type="submit"] {
-    border: 1px solid #000;
-    padding: 1rem;
-    margin: 1rem;
-    margin-bottom: 2rem;
+.form-gruppe textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/*SEND KNAPPEN*/
+.form button[type="submit"] {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.form button[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*FORM INFO TEKST PÅ BUNN AV SKJERMAET*/
+.form-info {
+    font-size: 0.85rem;
+    color: rgba(209, 213, 219, 1);
+    border-top: #333 solid 1px;
+    padding-top: 1rem;
+    line-height: 1.6;
 }
 
 /*HUSK Å ADDE CSS FOR P TAGEN MED TEKST INFO PÅ BUNN AV KSJEAMET OG TENKT BARE GJØR TEKSTEN GRÅ*/
@@ -906,6 +1002,20 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
+    }
+
+    /*KONTAKT OSS MOBIL STYLEING*/
+    .kontakt-layout {
+        flex-direction: column;
+    }
+
+    .venstre-bokser {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .form-rad {
+        grid-template-columns: 1fr;
     }
 }
 
