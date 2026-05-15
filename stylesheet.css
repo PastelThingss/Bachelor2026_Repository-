@@ -102,6 +102,61 @@ nav a {
     display: block;
 }
 
+/*TOGGLE CSS*/
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.dropdown-toggle i {
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+/*DESKTOP DROPDOWN MEMU*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #000;
+    padding: 0.5rem 0;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    min-width: 220px;
+    z-index: 200;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.75rem 1.25;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li .active {
+    display: block;
+    color: #fff;
+}
+
+/*ARROW PILEN ROTAJSON FOR DEN ON HOVER*/
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
 /*knapp css for ringe knappen btn=knapp*/
 .phone-btn {
     background-color: #000;
@@ -928,6 +983,11 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         margin-right: 16px;
     }
 
+    /* header må være relative så nav droppes riktig */
+    header {
+        position: relative;
+    }
+
     /* vis hamburger knappen */
     .hamburger {
         display: flex;
@@ -953,9 +1013,29 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         display: flex;
     }
 
-    /* header må være relative så nav droppes riktig */
-    header {
-        position: relative;
+    /*MOBIL VRS FOR DROPDOWN TJENSTER MENUEN*/
+    .dropdown-menu {
+        position: static;
+        display: none;
+        border: none;
+        box-shadow: none;
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    #main-nav.open .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-toggle {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /*GJØR SUB MNUEN I TJENSTER LITTEGRANNE MINDRE PÅ MOBIL I FORHOLD TIL DESKTOP*/
+    .dropdown-menu li a {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
     }
 
     /* hero: tekst over bilde på mobil */
