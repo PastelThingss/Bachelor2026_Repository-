@@ -140,6 +140,8 @@ header {
     font-weight: 600;
     text-transform: uppercase;
     white-space: nowrap;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #000;
 }
 
 .dropdown-menu li a:hover {
@@ -209,6 +211,30 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.hero-kun-tekst {
+    min-height: auto;
+    align-items: flex-start;
+    margin: 1rem 2rem;
+    border: none;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.hero-kun-tekst .hero-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+.hero-kun-tekst .hero-text h1 {
+    font-size: 2.8rem;
+    max-width: 800px;
+}
+
+.hero-kun-tekst .hero-text p {
+    font-size: 1.2rem;
+    max-width: 700px;
 }
 
 .hero-text h1 {
@@ -348,15 +374,15 @@ header {
 
 .kort button {
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.65rem 0.75rem;
     background: #fff;
     color: #000;
     border: 1px solid #000;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    align-self: flex-start;
+    align-self: stretch;
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -374,18 +400,18 @@ header {
     align-items: stretch;
     border: 1px solid #000;
     margin: 2rem;
-    min-height: 200px;
+    width: 260px;
 }
 
 .oppdrag-left {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 220px;
-    flex: 1;
+    flex-shrink: 0;
+    width: 260px;
 }
 
 .oppdrag-left h2 {
@@ -398,7 +424,7 @@ header {
     flex: 1;
     padding: 2rem;
     display: flex;
-    align-items: center;
+    align-items: left;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
 }
@@ -409,7 +435,7 @@ header {
 }
 
 .oppdrag-img {
-    flex: 2;
+    flex: 1;
     overflow: hidden;
 }
 
@@ -450,7 +476,7 @@ header {
 }
 
 .steg-nummer {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgba(209, 213, 219, 1);
 }
@@ -533,7 +559,7 @@ header {
     align-items: stretch;
     margin: 2rem;
     border: 1px solid #000;
-    min-height: 200px;
+    min-height: 220px;
 }
 
 .erfaring-tall {
@@ -544,11 +570,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 150px;
+    min-width: 200px;
+    width: 200px;
 }
 
 .erfaring-tall span {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 800;
     line-height: 1;
 }
@@ -587,7 +614,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 2rem;
-    margin: 2rem;
+    margin: 3rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -666,12 +693,12 @@ footer {
 }
 
 .footer-logo {
-    height: 50px;
+    height: auto;
     margin-bottom: 1rem;
 }
 
 .footer-logo {
-    height: 50px; /*bare for aa gi logen en max/min size til jeg ser famtisk for stor logen blir*/
+    height: auto; 
     font-family: "time-new-roman", serif;
     font-style: time-new-roman;
 }
@@ -682,6 +709,18 @@ footer {
 
 #bjørn {
     font-size: 1.5rem;
+}
+
+.footer-badges {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.75rem;
+}
+
+.footer-badges img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
 .footer-quote {
@@ -702,7 +741,7 @@ footer {
 }
 
 .footer-col h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -742,7 +781,7 @@ footer {
 .kontakt-layout {
     display: flex;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
     align-items: flex-start;
 }
 
@@ -807,6 +846,9 @@ footer {
     background: #000;
     color: #fff;
     display: block;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
 }
 
 .ring-kort .phone-btn:hover {
@@ -890,8 +932,9 @@ footer {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    align-self: flex-start;
+    align-self: stretch;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .form button[type="submit"]:hover {
@@ -901,16 +944,17 @@ footer {
 
 /*FORM INFO TEKST PÅ BUNN AV SKJERMAET*/
 .form-info {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     color: rgba(106, 114, 130, 1);
     border-top: #000 solid 1px;
-    padding-top: 1rem;
-    line-height: 1.6;
+    padding-top: 0.75rem;
+    line-height: 1.5;
 }
 
 /*FAQ STYLEING FOR SPØRSMÅL POP DOWN ELEMENTE*/
 .faq-container {
     margin: 2rem 0;
+    width: 100%;
 }
 
 .faq-container h2 {
@@ -923,6 +967,7 @@ footer {
 .faq-item {
     border: #000 solid 1px; 
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 .faq-spørsmål {
@@ -930,7 +975,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 1.5rem;
+    padding: 0.9rem 1.5rem;
     background: #fff;
     border: none;
     font-size: 0.95rem;
@@ -1098,6 +1143,10 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         flex-direction: column;
     }
 
+    .hero-buttons button {
+
+    }
+
     .hero-images > img {
         height: 260px;
     }
@@ -1257,6 +1306,8 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 
     #main-nav a.nav-link:not(.dropdown-toggle):not(.phone-btn) {
         padding: 0.75rem 1.5rem;
+        font-size: 1.1rem;
+        color: #000;
     }
 
     .nav-link.dropdown-toggle {
@@ -1272,6 +1323,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         box-shadow: none;
         margin-left: 1.5rem;
         padding: 0;
+        background: transparent;
     }
 
     #main-nav.open .dropdown-menu {
@@ -1294,7 +1346,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 
     .dropdown-menu li a {
-        padding: 0.7rem 1rem;
+        padding: 0.75rem 1.5rem;
         font-size: 0.95rem;
     }
 
@@ -1314,6 +1366,31 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     .hero-badges img {
         width: 70px;
         height: 70px;
+    }
+
+    .hero-buttons {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .hero-buttons button {
+        width: auto;
+        min-width: 220px;
+        max-width: 280px;
+    }
+
+    .hero-buttons-hvit {
+        width: auto;
+        min-width: 160px;
+        max-width: 240px;
+        display: block;
+    }
+
+    .oppdrag-img img {
+        height: 250px;
+        min-height: 250px;
     }
 }
 

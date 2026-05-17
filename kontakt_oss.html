@@ -28,6 +28,7 @@
 
         <!--DESKTOP + MOBIL NAVBAR-->
         <nav id="main-nav">
+            <a href="home.html" class="nav-link">FORSIDE</a>
 
             <div class="dropdown">
                 <a href="tjenester.html" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
@@ -52,7 +53,7 @@
     <!--main-->
     <main>
         <!--HERO TEXT-->
-        <section class="hero">
+        <section class="hero hero-kun-tekst">
             <div class="hero-text">
                 <h1>KONTAKT OSS OM DITT OPPDRAG</h1>
                 <p>Ta kontakt hvis du ønsker hjelp med rehabilitering, bad/våtrom, tak, vinduer og dører, tilbygg eller nybygg. Vi hjelper privatkunder i Halden og Fredrikstad-området med både mindre og større oppdrag.</p>
@@ -111,7 +112,7 @@
                     <div class="form-gruppe">
                         <label for="ønsker">HVA ØNSKER DU HJELP MED?</label>
                         <select id="ønsker" name="ønsker">
-                            <option value="" disabled selected>Velg tjeneste...</option>
+                            <option value="" disabled selected hidden>Velg tjeneste...</option>
                             <option value="rehablitering">REHABILITERING</option>
                             <option value="bad/våtrom">BAD OG VÅTROM</option>
                             <option value="tak">TAKARBEID</option>
@@ -142,10 +143,10 @@
             </form>
         </div>
 
-            <!--DETTE LURER MANGE PÅ-->
+            <!--OFTE STILTE SPØRSMÅL-->
         <div class="faq-container">
             <!--OVERSKIRFT OVER SPØRSMÅLENE-->
-            <h2>DETTE LURER MANGE PÅ</h2>
+            <h2>OFTE STILTE SPØRSMÅL</h2>
 
             <!--SPØRSMÅL 1-->
             <!--SPØRSMÅLET FELTER-->
@@ -238,6 +239,10 @@
             <div class="footer-logo">
                 <p><strong>Byggmester</strong></p>
                 <p id="bjørn"><strong>Bjørn Larsen eftf.</strong></p>
+                <div class="footer-badges">
+                    <img src="img/badge1.png" alt="Mester">
+                    <img src="img/badge2.png" alt="Sentralt godkjent">
+                </div>
             </div>
 
             <div class="footer-col">
@@ -273,8 +278,8 @@
         </div>
 
             <div class="footer-bottom">
-                <a href="#">Tilbake til topp</a> <!--HUSK DETTE SKAL VÆRE EN PIL!!-->
-                <p>&copy; 2024 Byggmester Bjørn Larsen eftf. Alle rettigheter reservert.</p>    
+                <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑</a> <!--HUSK DETTE SKAL VÆRE EN PIL!!-->
+                <p>&copy; 2026 Byggmester Bjørn Larsen eftf. Alle rettigheter reservert.</p>    
                 <a href="#">Personvern</a>
             </div>
     </footer>
