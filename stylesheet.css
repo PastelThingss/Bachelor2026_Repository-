@@ -1,4 +1,4 @@
-/** paa virker hele nettisden og reseter all stylign paa siden og basen dens*/
+/** på virker hele nettisden og reseter all stylign på siden og basen dens*/
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +8,13 @@
 /*body*/
 body {
     font-family: "Roboto", sans-serif, Arial;
-    /*color: #000;
-    background: #fff;*/
-    margin-left: 85px;
-    margin-right: 85px;
 }
 
+/*main*/
 main {
     padding-bottom: 2rem;
+    margin-left: 85px;
+    margin-right: 85px;
 }
 
 #main-nav {
@@ -35,7 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 0;
+    padding: 1.25rem 2.5rem;
     border-bottom: 1px solid #000;
     position: sticky;
     top: 0;
@@ -50,12 +49,14 @@ header {
     font-style: time-new-roman;
 }
 
+/*for selve logo utseende*/
 .logo p {
     font-style: time-new-roman;
     margin: 0;
     font-size: 1.1rem;
 }
 
+/*for sizen på logo delen som heter bjørn*/
 #bjørn {
     font-size: 1.35rem;
 }
@@ -64,7 +65,7 @@ header {
 .nav-link {
     color: #000;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 450;
     text-transform: uppercase;
     font-size: 1.05rem;
     padding: 0.5rem 0;
@@ -245,6 +246,7 @@ header {
 
 .hero-text p {
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .hero-images {
@@ -256,7 +258,7 @@ header {
 
 .hero-images > img {
     width: 100%;
-    height: 400px;
+    height: 420px;
     object-fit: cover;
     display: block;
 }
@@ -266,7 +268,6 @@ header {
     bottom: 10px;
     right: 10px;
     display: flex;
-    gap: 5px;
     margin-top: 10px;
 }
 
@@ -400,6 +401,7 @@ header {
     align-items: stretch;
     border: 1px solid #000;
     margin: 2rem;
+    max-height: 230px;
 }
 
 .oppdrag-left {
@@ -409,8 +411,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 240px;
-    width: 260px;
+    flex: 1;
+    width: 100%;
 }
 
 .oppdrag-left h2 {
@@ -420,17 +422,18 @@ header {
 }
 
 .oppdrag-text {
-    flex: 0 0 280px;
-    padding: 2rem;
+    flex: 1;
+    padding: 1rem;
     display: flex;
-    align-items: left;
+    align-items: center;
     border-left: 1px solid #000;
     border-right: 1px solid #000;
 }
 
 .oppdrag-text p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
+    font-weight: 600;
 }
 
 .oppdrag-img {
@@ -498,6 +501,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    border-bottom: #000 solid 1px;
 }
 
 .prosjekter-header a {
@@ -1036,7 +1040,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 /*liten skjerm*/
 @media only screen and (max-width: 600px) {}
 
-/*medium skjerm*/
+/*medium skjerm (tablet/mobil skjermer som små ipader og større telefon som samsung + modeller)*/
 @media only screen and (max-width: 768px) {
         body {
         margin-left: 16px;
@@ -1272,7 +1276,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 }
 
-/*stor ksjedrm*/
+/*stor ksjedrm for vanelig tablet eller små laptoper som ipad eller samung tablet eller en liten chrome book*/
 @media only screen and (max-width: 992px) {
     .logo {
         flex-shrink: 0;
@@ -1407,7 +1411,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 }
 
-/*extra stor skjerm*/
+/*extra stor skjerm men hovedsaklig for vaneli gsize laptop skjermer eller monitor større pc skjeremr.*/
 @media only screen and (max-width: 1200px) {
     .prosjekter-bokser {
     display: flex;
