@@ -1175,30 +1175,43 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
     }
 
     /* oppdrag: stable vertikalt */
-    .oppdrag {
-        flex-direction: column;
-        margin: 1rem;
-    }
+        /* oppdrag: stable vertikalt for mobil */
+ .oppdrag {
+    flex-direction: column;
+    margin: 1rem;
+    max-height: none;    
+}
 
-    .oppdrag-left {
-        width: 100%;
-        padding: 1.5rem;
-    }
+.oppdrag-left {
+    width: 100%;
+    padding: 1.5rem;
+    flex: none;         
+    border-right: none;
+    border-bottom: 1px solid #000;
+}
 
-    .oppdrag-left h2 {
-        font-size: 1.4rem;
-    }
+.oppdrag-left h2 {
+    font-size: 1.4rem;
+}
 
-    .oppdrag-text {
-        border-left: none;
-        border-right: none;
-        border-top: 1px solid #000;
-        padding: 1rem;
-    }
+.oppdrag-text {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+    flex: none;          
+}
 
-    .oppdrag-img img {
-        height: 200px;
-    }
+.oppdrag-img {
+    flex: none;          
+    height: 220px;     
+}
+
+.oppdrag-img img {
+    height: 220px;       
+    min-height: unset;   
+}
 
     /* steg: 2 kolonner på mobil (passer bedre enn 1) */
     .steg-grid {
