@@ -155,6 +155,34 @@ header {
     transform: rotate(180deg);
 }
 
+.dropdown-text {
+    color: #000;
+    text-decoration: none;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+
+.dropdown-pil-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.3rem;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.dropdown-pil-btn i {
+    font-size: 0.9rem;
+    transition: transform 0.25s ease;
+}
+
+/* Pil roterer n책r dropdown er 책pen */
+.dropdown-pil-btn.open i {
+    transform: rotate(180deg);
+}
+
 /*knapp css for ringe knappen btn=knapp*/
 .phone-btn {
     background: #000;
@@ -178,19 +206,36 @@ header {
 /* hamburger mny holdes gjemt p책 dekstop pga css her*/
 .hamburger {
     display: none;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
-.hamburger span {
+.hamburger-ikon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-ikon span {
     display: block;
     width: 28px;
     height: 3px;
     background: #000;
+    transition: 0.2s;
+}
+
+.hamburger-tekst {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 /*for introduksjon bilde og tekst paa forside*/
@@ -1342,18 +1387,11 @@ satt opp for 책 treffe mesteparten av skjermer som blir brukt og for 책 slippe �
         background: transparent;
     }
 
-    #main-nav.open .dropdown-menu {
+    .dropdown-menu.open {
         display: block;
     }
 
-    .dropdown:hover .dropdown-menu {
-        display: none;
-    }
-
-    .dropdown-toggle {
-        justify-content: space-between;
-    }
-
+    
     .phone-btn {
         margin: 1rem 1.5rem;
         justify-content: center;

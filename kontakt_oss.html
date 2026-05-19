@@ -31,7 +31,12 @@
             <a href="home.html" class="nav-link">FORSIDE</a>
 
             <div class="dropdown">
-                <a href="tjenester.html" class="dropdown-toggle nav-link">TJENESTER <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-toggle nav-link">
+    <a href="tjenester.html" class="dropdown-text">TJENESTER</a>
+    <button class="dropdown-pil-btn" onclick="toggleDropdown(this)" aria-label="Åpne tjenestemeny">
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+</div>
                 <ul class="dropdown-menu">
                     <li><a href="#">REHABILITERING</a></li>
                     <li><a href="#">BAD OG VÅTROM</a></li>

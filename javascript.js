@@ -23,8 +23,13 @@ function changeSlide(btn, direction) {
 
 function toggleMenu() {
     const nav = document.getElementById('main-nav');
+    const btn = document.getElementById('hamburger-btn');
+    const tekst = btn.querySelector('.hamburger-tekst');
+    
     if (nav) {
         nav.classList.toggle('open');
+        const erApen = nav.classList.contains('open');
+        tekst.textContent = erApen ? 'X' : 'MENY';
     }
 }
 
@@ -67,3 +72,23 @@ document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.add('active');
     }
 });
+
+function toggleDropdown(btn) {
+    const dropdown = btn.closest('.dropdown');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const isOpen = menu.classList.contains('open');
+    
+    // Lukk alle andre dropdowns først
+    document.querySelectorAll('.dropdown-menu.open').forEach(m => {
+        m.classList.remove('open');
+    });
+    document.querySelectorAll('.dropdown-pil-btn.open').forEach(b => {
+        b.classList.remove('open');
+    });
+    
+    // Toggle denne
+    if (!isOpen) {
+        menu.classList.add('open');
+        btn.classList.add('open');
+    }
+}
