@@ -78,6 +78,7 @@ header {
 }
 
 .nav-link.active::after {
+    display: block;
     position: absolute;
     width: 100%;
     content: '';
@@ -142,7 +143,7 @@ header {
     text-transform: uppercase;
     white-space: nowrap;
     font-size: 0.9rem;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #333;
 }
 
 .dropdown-menu li a:hover {
@@ -208,7 +209,7 @@ header {
     display: none;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -221,15 +222,15 @@ header {
 .hamburger-ikon {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3rem;
 }
 
 .hamburger-ikon span {
     display: block;
-    width: 28px;
-    height: 3px;
+    width: 1.75rem;
+    height: 0.18rem;
     background: #000;
-    transition: 0.2s;
+    
 }
 
 .hamburger-tekst {
@@ -1114,6 +1115,8 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         background: #fff;
         border-bottom: 1px solid #000;
         z-index: 100;
+        align-items: flex-start;
+        gap: 0;
     }
 
     /* vis nav når open-klassen er lagt til av JS */
@@ -1123,6 +1126,8 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
 
     #main-nav a.nav-link:not(.dropdown-toggle):not(.phone-btn) {
         padding: 0.75rem 1.5rem;
+        width: 100%;
+        text-align: left;
     }
 
     .nav-link.dropdown-toggle {
@@ -1141,9 +1146,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         padding: 0;
     }
 
-    #main-nav.open .dropdown-menu {
-        display: block;
-    }
+   
 
     .dropdown-toggle {
         justify-content: space-between;
@@ -1358,6 +1361,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         border-bottom: 1px solid #000;
         z-index: 100;
         gap: 0;
+        align-items: flex-start;
     }
 
     #main-nav.open {
@@ -1369,6 +1373,8 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         font-size: 1.1rem;
         color: #000;
         font-weight: 600;
+        width: 100%;
+        text-align: left;
     }
 
     .nav-link.dropdown-toggle {
@@ -1407,6 +1413,7 @@ satt opp for å treffe mesteparten av skjermer som blir brukt og for å slippe �
         font-weight: 400;
         border-bottom: none;
         background: transparent;
+        text-align: left;
     }
 
     .dropdown-menu li a:hover {
